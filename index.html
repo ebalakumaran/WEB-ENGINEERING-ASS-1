@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static webpage</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("images (2).jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .login{
+           
+            text-align: center;
+            width: 25%;
+            height: 30%;
+            padding: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            color: black;
+            font-size: large;
+            transition: all 0.5s;
+            text-align: center;
+        }
+        .login:hover{
+            border: 5px solid black;
+            box-shadow: 10px 10px 3px black;
+            transform: translate(0,-20px);
+
+        }
+        marquee{
+            margin-top: 1%;
+            background-color: black;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        input{
+            margin-left: 15px;
+            height: 30px;
+        }
+        .btn{
+            width: 80px;
+            height: 40px;
+            background-color: black; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            transition: all .5s;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            transition: all .5s;
+        }
+        .btn:hover{
+            transform: translate(0,-10px);
+            box-shadow: 8px 8px 2px black;
+            background-color: white;
+            color: black;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>WELCOME..!!</h1>
+    <marquee onmouseover="stop()" onmouseout="start()"><span>SIMPLE LOGIN PAGE - EXPERIMENT NUMBER 1,2</span> </marquee>
+    <div class="login">
+        <form method="" action="formsubmit.html">
+            <label for="name">NAME :</label>
+            <input type="text" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email">EMAIL : </label>
+            <input type="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="DOB">DATE OF BIRTH : </label>
+            <input type="date" name="DOB" placeholder="Enter your DOB" required><br><br>
+            <label for="password">PASSWORD : </label>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
